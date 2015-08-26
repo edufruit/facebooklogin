@@ -20,8 +20,8 @@ Gaurav Yadav
 <content src="index.html" /> 
  
 <gap:plugin name="com.phonegap.plugins.facebookconnect" version="0.9.0">
-    <param name="APP_ID" value="388167931389640" />
-    <param name="APP_NAME" value="codeiglogin" />
+    <param name="APP_ID" value="742192919239686" />
+    <param name="APP_NAME" value="mobileapp" />
 </gap:plugin>
  
 <gap:platform name="android" />
