@@ -89,17 +89,17 @@
 document.addEventListener('deviceready', initApp, false);
  
 // facebookConnectPlugin.login(Array strings of permissions, Function success, Function failure)
- 
+ alert(12);
 var fbLoginSuccess = function (userData) 
 {
     alert("UserInfo: " + JSON.stringify(userData));
 }
  
 function initApp()
-{
+{ alert(14);
     facebookConnectPlugin.login(["public_profile"],
         fbLoginSuccess,
-        function (error) { alert("" + error) }
+        function (error) { alert("" + error); }
     );
 }
   
