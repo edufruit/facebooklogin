@@ -134,6 +134,18 @@ alert('checking if you are logged in or not ' );
 
 <div id="status">
 </div>
+<script src="jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+ $(document).on('click', '#login', function(){
+   facebookConnectPlugin.login(["email,user_birthday,publish_actions"], function(response) {
+      if(response.authResponse) {
+         alert(response.authResponse.userID);
+      }
+   });
+ });
+</script>
+
+<img id="login" src="login.png" alt="" />
 
 </body>
 </html>
